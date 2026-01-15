@@ -1,59 +1,103 @@
-# NtPitsApp
+# nt-pits-app
+*A nervous system pit stop — part of the Neuro-tools project*
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
+---
 
-## Development server
+## 🏁 Overview
 
-To start a local development server, run:
+**nt-pits-app** is a **self-awareness tool** designed as a **pit stop for your nervous system**.  
 
-```bash
-ng serve
-```
+Just like race cars pause in the pits to **check fuel, tires, and engine** before returning to the track, this tool helps users **pause, check essentials, and reset** before continuing their day.  
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+It’s built for **neurodivergent users** and anyone who wants a **quick, calm check-in** with their body and environment.  
 
-## Code scaffolding
+> “Pause. Check. Adjust. Continue.”  
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🛠 How It Works — The Three Steps
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 1️⃣ Bare Necessities
 
-```bash
-ng generate --help
-```
+- Sleep ✅  
+- Hunger & Thirst ✅  
+- Pain & Temperature ✅  
+- Energy & Basic Overstimulation ✅  
 
-## Building
+> First, make sure the **foundation is solid**. If these aren’t checked, nothing else matters.  
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+### 2️⃣ Sensory State 
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **Internal Sensations:** tightness, heaviness, buzzing, numbness  
+- **External Factors:** sound, light, smell, touch, visual clutter  
 
-## Running unit tests
+> This is your **body and environment communicating**. Lets you notice tension before it builds up.  
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+### 3️⃣ Emotional Layer (Optional) — Feedback
 
-## Running end-to-end tests
+- Gentle, rule-based suggestions  
+- Accept, ignore, or skip  
+- Optional layer — **not required to proceed**  
 
-For end-to-end (e2e) testing, run:
+> Emotions here are **informative, not mandatory**. The priority is keeping the system functional.  
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Why this tool matters ?
 
-## Additional Resources
+- Prevents overwhelm before it escalates  
+- Focuses on **actions & needs** first, emotions second  
+- Neutral, non-judgmental approach  
+- Helps **neurodivergent users track internal and external triggers**  
+- Quick, actionable, **takes 1–2 minutes**  
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 🎨 Design & User Experience
+
+- Calm, soft interface with **friendly colors**  
+- Step-by-step flow: Bare Necessities → Sensory → Emotional → Result  
+- Intuitive sliders, chips, and toggles  
+- Optional dark/light mode for comfort  
+- Neutral metaphors keep focus on **function over emotion**  
+
+---
+
+## 📊 Result & History
+
+After each pit stop, the app provides:
+
+- **Current state** — internal + external sensations  
+- **Priority needs** — actionable items to check
+- **Optional emotional suggestions** — soft guidance  
+- **History** — review past check-ins and notice patterns  
+
+
+---
+
+## 🌱 Future Directions
+
+- AI-powered emotional suggestions  
+- Integration with **Virtual Closet** (part of Neuro-tools)  
+- Personalized analytics & visual dashboards  
+- Mobile-friendly deployment for iPad/phone  
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.  
+
+> Open source for portfolio, learning, and community purposes. Commercial use may require contacting the author.  
+
+---
+
+## 💡 Acknowledgements & Inspiration
+
+- Inspired by **car racing pit stops** for step-by-step self-awareness  
+- Built with **Angular + Angular Material** and **Firebase**  
+- Designed for **neurodivergent-friendly user experience**  
