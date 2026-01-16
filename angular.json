@@ -21,6 +21,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+			"localize": true,
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "sass",
@@ -38,7 +39,10 @@
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
-            }
+            },
+            "polyfills": [
+              "@angular/localize/init"
+            ]
           },
           "configurations": {
             "production": {
@@ -79,7 +83,15 @@
         "test": {
           "builder": "@angular/build:unit-test"
         }
-      }
+      },
+	  "i18n": {
+		"sourceLocale":"en-US",
+		"locales": {
+			"es":{
+				"translation": "src/locale/messages.es.xlf"
+			}
+		}
+	  }
     }
   }
 }
