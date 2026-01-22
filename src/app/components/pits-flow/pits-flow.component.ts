@@ -31,7 +31,6 @@ export class CdkCustomStepperWithoutFormExample { }
 	styleUrl: './pits-flow.component.scss',
 })
 export class PitsFlowComponent extends CdkStepper {
-	public stepsCat = ['Basics', 'State', 'Emotions'];
 	selectStepByIndex(index: number): void {
 		this.selectedIndex = index;
 	}

@@ -1,5 +1,15 @@
 <header>
-	<h2>{{stepsCat[selectedIndex]}}</h2>
+	@switch (selectedIndex) {
+		@case (0) {
+			<h2 i18n="@@step.bare-necessities.title"> Basic</h2>
+		}
+		@case (1) {
+			<h2 i18n="@@step.sensory.title"> State </h2>
+		}
+		@case (2) {
+			<h2 i18n="@@step.emotion-layer.title"> Emotions </h2>
+		}
+	}
 </header>
 <mat-divider></mat-divider>
 <div [ngTemplateOutlet]="selected ? selected.content : null"></div>
@@ -8,7 +18,20 @@
 		<mat-icon>arrow_left</mat-icon>
 	</button>
 	@for (step of steps; track step; let i = $index) {
-		<button [matButton]="(selectedIndex === i)? 'filled' : 'tonal'" (click)="selectStepByIndex(i)" >{{stepsCat[i]}}</button>
+	<button [matButton]="(selectedIndex === i)? 'filled' : 'tonal'"
+		(click)="selectStepByIndex(i)">
+	@switch (selectedIndex) {
+		@case (0) {
+			<span i18n="@@step.bare-necessities.title"> Basic</span>
+		}
+		@case (1) {
+			<span i18n="@@step.sensory.title"> State </span>
+		}
+		@case (2) {
+			<span i18n="@@step.emotion-layer.title"> Emotions </span>
+		}
+	}
+	</button>
 	}
 	<button matIconButton extended cdkStepperNext [disabled]="selectedIndex === 2">
 		<mat-icon>arrow_right</mat-icon>
