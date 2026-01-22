@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-emotional-layer',
   imports: [],
   templateUrl: './emotional-layer.component.html',
-  styleUrl: './emotional-layer.component.sass',
+  styleUrl: './emotional-layer.component.scss',
 })
 export class EmotionalLayerComponent {
 

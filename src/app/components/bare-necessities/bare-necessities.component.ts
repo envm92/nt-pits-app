@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-bare-necessities',
   imports: [],
   templateUrl: './bare-necessities.component.html',
-  styleUrl: './bare-necessities.component.sass',
+  styleUrl: './bare-necessities.component.scss',
 })
 export class BareNecessitiesComponent {
 

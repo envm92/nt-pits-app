@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-sensory-internal',
   imports: [],
   templateUrl: './sensory-internal.component.html',
-  styleUrl: './sensory-internal.component.sass',
+  styleUrl: './sensory-internal.component.scss',
 })
 export class SensoryInternalComponent {
 

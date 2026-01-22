@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-result',
   imports: [],
   templateUrl: './result.component.html',
-  styleUrl: './result.component.sass',
+  styleUrl: './result.component.scss',
 })
 export class ResultComponent {
 
