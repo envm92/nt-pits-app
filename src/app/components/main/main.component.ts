@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { PitsFlowComponent, CdkCustomStepperWithoutFormExample } from '../pits-flow/pits-flow.component';
+import { CdkCustomStepperWithoutFormExample } from '../pits-flow/pits-flow.component';
 
 @Component({
   selector: 'app-main',
-  imports: [PitsFlowComponent, CdkCustomStepperWithoutFormExample],
+  imports: [CdkCustomStepperWithoutFormExample],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
 })

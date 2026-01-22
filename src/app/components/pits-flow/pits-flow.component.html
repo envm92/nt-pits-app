@@ -1,16 +1,16 @@
 <header>
-    <h2>Step {{ selectedIndex + 1 }}/{{ steps.length }}</h2>
-  </header>
-<div></div>
-
-  <div [ngTemplateOutlet]="selected ? selected.content : null"></div>
-  <footer class="example-step-navigation-bar">
-    <button class="example-nav-button" cdkStepperPrevious>&larr;</button>
-    @for (step of steps; track step; let i = $index) {
-      <button
-        class="example-step"
-        [class.example-active]="selectedIndex === i"
-        (click)="selectStepByIndex(i)">Step {{ i + 1 }}</button>
-    }
-    <button class="example-nav-button" cdkStepperNext>&rarr;</button>
-  </footer>
+	<h2>{{stepsCat[selectedIndex]}}</h2>
+</header>
+<mat-divider></mat-divider>
+<div [ngTemplateOutlet]="selected ? selected.content : null"></div>
+<div id="steps-footer">
+	<button matIconButton extended cdkStepperPrevious [disabled]="selectedIndex === 0">
+		<mat-icon>arrow_left</mat-icon>
+	</button>
+	@for (step of steps; track step; let i = $index) {
+		<button [matButton]="(selectedIndex === i)? 'filled' : 'tonal'" (click)="selectStepByIndex(i)" >{{stepsCat[i]}}</button>
+	}
+	<button matIconButton extended cdkStepperNext [disabled]="selectedIndex === 2">
+		<mat-icon>arrow_right</mat-icon>
+	</button>
+</div>
