@@ -4,6 +4,8 @@ import { RouterOutlet } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDialog } from '@angular/material/dialog';
+import { DisclaimerDialogComponent } from './components/disclaimer-dialog/disclaimer-dialog.component';
 
 @Component({
 	selector: 'app-root',
@@ -18,13 +20,15 @@ import { MatIconModule } from '@angular/material/icon';
 	styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
+	readonly dialog = inject(MatDialog);
 	public theme = 'light';
 	ngOnInit(): void {
 		this.theme = window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-		console.log(this.theme);
 	}
 	changeTheme(event: PointerEvent): void {
 		this.theme = (this.theme === 'light') ? 'dark' : 'light';
-		console.log(this.theme)
+	}
+	openDisclaimer() :void {
+		this.dialog.open(DisclaimerDialogComponent);
 	}
 }
