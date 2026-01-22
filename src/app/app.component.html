@@ -1,5 +1,28 @@
-<div>
-	<h1>Self-awarness Tool</h1>
-	<h5 i18n> AKA <strong>nt-pits-app</strong></h5>
-	<p i18n> 🚧 Under construction 🚧</p>
-</div>
+<body [class.dark-mode]="theme=='dark'" [class.light-mode]="theme=='light'">
+	<div id="main-container">
+		<mat-toolbar color="primary">
+			<h1>Take5</h1>
+			<span class="spacer"></span>
+			@if (theme == 'light') {
+			<button matIconButton aria-label="Change to dark mode" (click)="changeTheme($event)">
+				<mat-icon>dark_mode</mat-icon>
+			</button>
+			} @else {
+			<button matIconButton aria-label="Change to light mode" (click)="changeTheme($event)">
+				<mat-icon>light_mode</mat-icon>
+			</button>
+			}
+			<button matIconButton aria-label="Change language">
+				<mat-icon>language</mat-icon>
+			</button>
+		</mat-toolbar>
+		<div id="main-content">
+			<router-outlet />
+		</div>
+		<div id="footer">
+			<span i18n="@@footer.disclaimer">
+				This tool is for self-reflection only and is not a medical or diagnostic product.
+			</span>
+		</div>
+	</div>
+</body>
